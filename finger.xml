@@ -1,0 +1,357 @@
+<root>
+    <waf name='360 Web Application Firewall'>
+        <finger>
+            <rule header='X-Powered-By-360WZB'>
+                <regmatch>
+                    <regexp>wangzhan\.360\.cn</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='Safedog Web Application Firewall'>
+        <finger>
+            <rule header='X-Powered-By'>
+                <regmatch>
+                    <regexp>WAF/2\.0</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='Anquanbao Web Application Firewall'>
+        <finger>
+            <rule header='X-Powered-By-Anquanbao'>
+                <regmatch>
+                    <regexp>MISS</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='Baidu Yunjiasu Web Application Firewall'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>yunjiasu-nginx</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='Knownsec KS-WAF'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>KS-WAF</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='F5 Networks BIG-IP Application Security Manager'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>BigIP</regexp>
+					<regexp>BIGipServer</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='Barracuda Web Application Firewall'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>Barracuda</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='BinarySEC Web Application Firewall'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>BinarySec</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='BlockDos Web Application Firewall'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>BlockDos</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='Cisco Systems ACE XML Gateway'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>ACE\sXML\sGateway</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='CloudFlare Web Application Firewall'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>cloudflare-nginx</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='IBM WebSphere DataPower'>
+        <finger>
+            <rule header='X-Backside-Transport'>
+                <regmatch>
+                    <regexp>\A(OK|FAIL)</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='FortiWeb Web Application FirewallF'>
+        <finger>
+            <rule header='Set-Cookie'>
+                <regmatch>
+                    <regexp>FORTIWAFSID=</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='Jiasule Web Application Firewall'>
+        <finger>
+            <rule header='Set-Cookie'>
+                <regmatch>
+                    <regexp>__jsluid=</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='ModSecurity: Open Source Web Application Firewall'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>Mod_Security</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='NetContinuum Web Application Firewall'>
+        <finger>
+            <rule header='Set-Cookie'>
+                <regmatch>
+                    <regexp>NCI__SessionId=</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='NetScaler Citrix Systems'>
+        <finger>
+            <rule header='Set-Cookie'>
+                <regmatch>
+                    <regexp>\A(ns_af=|citrix_ns_id|NSC_)</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='Newdefend Web Application Firewall'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>newdefend</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='Profense Web Application Firewall'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>Profense</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='Sucuri WebSite Firewall'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>Sucuri/Cloudproxy</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='TrafficShield F5 Networks'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>F5-TrafficShield</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='USP Secure Entry Server'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>Secure\sEntry\sServer</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<waf name='WebKnight Application Firewall'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>WebKnight</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='Safe3WAF'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>Safe3WAF</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='West263CDN'>
+        <finger>
+            <rule header='X-Cache'>
+                <regmatch>
+                    <regexp>WT263CDN</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='Wallarm'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>nginx-wallarm</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='Sucuri WAF'>
+        <finger>
+            <rule header='X-Sucuri-ID'>
+                <regmatch>
+                    <regexp>.*</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='Radware AppWall'>
+        <finger>
+            <rule header='X-SL-CompState'>
+                <regmatch>
+                    <regexp>.*</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='PowerCDN'>
+        <finger>
+            <rule header='PowerCDN'>
+                <regmatch>
+                    <regexp>.*</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='NSFocus'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>NSFocus</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='Naxsi'>
+        <finger>
+            <rule header='X-Data-Origin'>
+                <regmatch>
+                    <regexp>^naxsi</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='Mission Control Application Shield'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>Mission Control Application Shield</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='IBM DataPower'>
+        <finger>
+            <rule header='X-Backside-Transport'>
+                <regmatch>
+                    <regexp>^(OK|FAIL)</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='Edgecast'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>^ECD \(.*?\)$</regexp>
+                    <regexp>^ECS \(.*?\)$</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='Applicure dotDefender'>
+        <finger>
+            <rule header='X-dotDefender-denied'>
+                <regmatch>
+                    <regexp>^1$</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='Comodo WAF'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>Protected by COMODO WAF</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='CloudFlare'>
+        <finger>
+            <rule header='Server'>
+                <regmatch>
+                    <regexp>cloudflare-nginx</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+    <waf name='ChinaCache-CDN'>
+        <finger>
+            <rule header='Powered-By-ChinaCache'>
+                <regmatch>
+                    <regexp>.+</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	<!--
+	<waf name='Web Application Firewall Title'>
+        <finger>
+            <rule header='header type'>
+                <regmatch>
+                    <regexp>header keyword</regexp>
+                </regmatch>
+            </rule>
+        </finger>
+    </waf>
+	-->
+</root>
