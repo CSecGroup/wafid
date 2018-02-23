@@ -20,7 +20,7 @@ python wafid.py -l
        \/         \/     \/            \/
 
 WAFid - Web Application Firewall identify Tool
-By By Code Security Group
+By Code Security Group
 
 WAFid can identify these WAFs:
   360
