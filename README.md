@@ -67,7 +67,7 @@ WAFid can identify these WAFs:
 
 # More Info
 
- More information about the services that I offer at [Code Security Group](http://csecgroup.com/).
+ More information about the services that I offer at [Code Security Group](http://csecgroup.github.io/).
  
 # Questions?
 
